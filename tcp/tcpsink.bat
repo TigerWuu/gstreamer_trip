@@ -1,0 +1,1 @@
+gst-launch-1.0 videotestsrc is-live=true ! clockoverlay shaded-background=true font-desc="Sans 38" ! theoraenc ! oggmux ! tcpserversink host=192.168.100.4 port=8080 
