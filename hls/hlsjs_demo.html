@@ -17,7 +17,7 @@
         var hls = new Hls({
           debug: true,
         });
-        hls.loadSource('http://192.168.100.4:8000/playlist.m3u8');
+        hls.loadSource('http://127.0.0.1:8000/playlist.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.muted = true;
@@ -28,7 +28,7 @@
       // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
       // This is using the built-in support of the plain video element, without using hls.js.
       else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = 'http://192.168.100.4:8000/playlist.m3u8';
+        video.src = 'http://127.0.0.1:8000/playlist.m3u8';
         video.addEventListener('canplay', function () {
           video.play();
         });

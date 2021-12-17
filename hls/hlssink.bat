@@ -1,3 +1,3 @@
-gst-launch-1.0 videotestsrc is-live=true ! videoconvert ! clockoverlay ! ^
+gst-launch-1.0 ksvideosrc ! videoconvert ! clockoverlay ! ^
 x264enc tune=zerolatency ! mpegtsmux ! ^
-hlssink playlist-root=http://192.168.100.4:8000/ target-duration=5 max-files=5
+hlssink playlist-root=http://127.0.0.1:8000/ target-duration=5 max-files=5
