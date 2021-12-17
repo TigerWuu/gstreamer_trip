@@ -11,6 +11,7 @@ for window users:
 ## For HLS protocol
 
 > all host change to your own ip address
+> for chrome/edge/safari
 
 1. first terminal
 
@@ -36,7 +37,7 @@ for window users:
 
 ......
 
-## For tcpserversink
+## For TCP protocol
 
 > !!!!! only firefox or vlc can use
 
@@ -44,7 +45,7 @@ for window users:
     cd .\tcp\
     .\tcpsink.bat
     ```
-2.  watch in http://192.168.100.4:8080
+2.  watch in http://127.0.0.1:8080
 
 ## Reference
 
