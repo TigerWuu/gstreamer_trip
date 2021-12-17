@@ -48,6 +48,9 @@ for window users:
     ```
 2.  watch in http://127.0.0.1:8080
 
+## For linux
+>using postfix with "linux" script
+
 ## Reference
 
 - [4youngpadawans](http://4youngpadawans.com/stream-live-video-to-browser-using-gstreamer/) provide great instruction
