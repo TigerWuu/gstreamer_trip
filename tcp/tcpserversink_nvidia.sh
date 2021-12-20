@@ -1,0 +1,1 @@
+gst-launch-1.0 -v nvarguscamerasrc ! videoconvert ! omxh264enc ! mpegtsmux ! tcpserversink port=8000 host=127.0.0.1
